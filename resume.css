@@ -1,0 +1,6 @@
+/* Hide some elements in the printed version */
+@media print {
+	.noprint {
+    	display: none;
+	}
+}
