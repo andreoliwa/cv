@@ -1,7 +1,11 @@
-.portugues {
-	display: block;
-}
+/* English language */
+.english { display: none; }
 
-.english {
-	display: none;
-}
+/* Portuguese language */
+.portugues { display: block; }
+li span.portugues { display: inline; }
+
+/* Skill levels */
+.level-advanced:after { content: " (Avançado)"; }
+.level-intermediate:after { content: " (Intermediário)"; }
+.level-beginner:after { content: " (Iniciante)"; }
