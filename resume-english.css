@@ -1,5 +1,6 @@
 /* English language */
 .english { display: block; }
+li.english { display: block; }
 li span.english { display: inline; }
 
 /* Portuguese language */
@@ -9,3 +10,10 @@ li span.english { display: inline; }
 .level-advanced:after { content: " (Advanced)"; }
 .level-intermediate:after { content: " (Intermediate)"; }
 .level-beginner:after { content: " (Beginner)"; }
+
+/* Languages */
+.language-native:after { content: " (native)"; }
+.language-fluent:after { content: " (fluent)"; }
+.language-advanced:after { content: " (advanced)"; }
+.language-beginner:after { content: " (begginer)"; }
+.language-notions:after { content: " (notions)"; }

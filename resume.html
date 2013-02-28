@@ -6,26 +6,33 @@
 	<meta name="author" content="Wagner Augusto Andreoli">
 
 	<link rel="stylesheet" type="text/css" href="resume.css" />
-	<link rel="stylesheet" type="text/css" href="resume-english.css" title="english" />
-	<link rel="alternate stylesheet" type="text/css" href="resume-portugues.css" title="portugues" />
+	<link rel="stylesheet" type="text/css" href="resume-portugues.css" title="portugues" />
+	<link rel="alternate stylesheet" type="text/css" href="resume-english.css" title="english" />
 	<script type="text/javascript" src="resume.js"></script>
 </head>
 
 <body>
-	<div id="language_selection" class="noprint">
-		<a accesskey="n" href="#"onclick="changeLanguage('english', 'Resume: Andreoli, Wagner A.');">English (ALT+N)</a>
-		&nbsp;|&nbsp;
+	<div id="language-selection" class="noprint">
 		<a accesskey="p" href="#"onclick="changeLanguage('portugues', 'Currículo: Wagner Augusto Andreoli');">Português (ALT+P)</a>
+		&nbsp;|&nbsp;
+		<a accesskey="n" href="#"onclick="changeLanguage('english', 'Resume: Andreoli, Wagner A.');">English (ALT+N)</a>
 	</div>
 	<section id="profile">
 		<h1 class="english">Andreoli, Wagner A.</h1>
 		<h1 class="portugues">Wagner Augusto Andreoli</h1>
 
-		<p class="english">Developer - Web and desktop applications</p>
-		<p class="portugues">Desenvolvedor de sistemas - Aplicações web e desktop</p>
+		<p class="english">Backend developer - Web and desktop applications</p>
+		<p class="portugues">Desenvolvedor backend - Aplicações web e desktop</p>
 
-		<p>
+		<p class="email">
 			<a href="mailto:wagnerandreoli@gmail.com">wagnerandreoli@gmail.com</a>
+		</p>
+
+		<p class="english phone">+55 11 99307-4173</p>
+		<p class="portugues phone">(11) 99307-4173</p>
+
+		<p class="url">
+			<a href="http://sites.google.com/site/wagnerandreoli/cv">http://sites.google.com/site/wagnerandreoli/cv</a>
 		</p>
 
 		<h2 class="english">Summary</h2>
@@ -33,9 +40,9 @@
 
 		<ul>
 			<li class="portugues">Mais de 10 anos de experiência em desenvolvimento de software.</li>
-			<li class="portugues">Requisitos, análise, design de bancos de dados, programação e interfaces de usuário.</li>
+			<li class="portugues">Requisitos, análise, modelagem de dados, programação e interfaces de usuário.</li>
 			<li class="portugues">Facilidade no aprendizado, auto-didata, constantemente atualizado com leituras especializadas.</li>
-			<li class="portugues">Disponível para viajar e trabalhar em outras cidades ou no exterior.</li>
+			<li class="portugues">Atualmente residente em São Paulo, SP; disponível para viajar e trabalhar em outras cidades ou no exterior.</li>
 		</ul>
 	</section>
 
@@ -44,15 +51,15 @@
 		<h2 class="portugues">Especialidades</h2>
 
 		<ul>
-			<li class="portugues">Design e programação orientados a objeto com C#, PHP, C++, ASP.NET.</li>
-			<li class="portugues">Modelagem relacional de bancos de dados usando Oracle, MySQL, SQL Server, SQLite.</li>
-			<li class="portugues">Desenvolvimento web: HTML, CSS, JavaScript, jQuery, Drupal.</li>
+			<li class="portugues">Design e programação orientados a objeto.</li>
+			<li class="portugues">Modelagem relacional de bancos de dados (MySQL, Oracle, SQL Server, SQLite).</li>
+			<li class="portugues">Desenvolvimento web backend em ambiente LAMP (PHP, HTML, CSS, JavaScript, jQuery).</li>
 		</ul>
 	</section>
 
-	<section id="skills">
-		<h2 class="english">Skills & Expertise</h2>
-		<h2 class="portugues">Habilidades</h2>
+	<section id="current-skills">
+		<h2 class="english">Current skills & expertise</h2>
+		<h2 class="portugues">Habilidades em uso atualmente</h2>
 
 		<ul>
 			<li class="level-advanced years-3">PHP</li>
@@ -61,9 +68,11 @@
 				<span class="english">Bash shell scripting</span>
 				<span class="portugues">Scripts shell Bash</span>
 			</li>
-			<li class="level-intermediate years-4">Linux/Ubuntu/Debian</li>
+			<li class="level-intermediate years-4">Linux (Ubuntu-like, CentOS)</li>
+
 			<li class="level-intermediate years-4">Git</li>
-			<li class="level-intermediate years-8">Subversion</li>
+			<li class="level-intermediate years-8">Subversion, commit hooks</li>
+
 			<li class="level-advanced years-many">
 				<span class="english">Object Oriented Design</span>
 				<span class="portugues">Design Orientado a Objetos</span>
@@ -73,33 +82,277 @@
 				<span class="portugues">Modelagem de dados</span>
 			</li>
 			<li class="level-advanced years-3">MVC</li>
+			<li class="level-beginner years-2">jQuery, JavaScript, AJAX</li>
+			<li class="level-beginner years-4">HTML, CSS</li>
 
-			<li class="level-beginner years-1">Python</li>
+			<li class="level-beginner years-1">
+				<span class="english">Agile (Scrum with Pivotal Tracker)</span>
+				<span class="portugues">Metodologias ágeis (Scrum com Pivotal Tracker)</span>
+			</li>
+
+			<li class="level-intermediate years-3">Oracle 11g</li>
+
+			<li class="level-beginner years-1">
+				<span class="english">TDD, unit tests</span>
+				<span class="portugues">TDD e testes unitários</span>
+			</li>
+
+			<li class="level-beginner years-1">
+				<span class="english">CI with Jenkins</span>
+				<span class="portugues">Integração contínua com Jenkins</span>
+			</li>
+		</ul>
+	</section>
+
+	<section id="other-skills">
+		<h2 class="english">Previous and other skills</h2>
+		<h2 class="portugues">Habilidades anteriores e outras</h2>
+
+		<ul>
+			<li class="level-beginner years-0">Python</li>
+			<li class="level-beginner years-0">Ruby on Rails</li>
 			<li class="level-intermediate years-4">C#</li>
 			<li class="level-intermediate years-8">C++</li>
-			<li class="level-intermediate years-4">.NET</li>
-			<li class="level-beginner years-1">ASP.NET MVC</li>
+			<li class="level-intermediate years-4">.NET Framework</li>
+			<li class="level-beginner years-1">ASP.NET MVC 2</li>
+			<li class="level-intermediate years-4">ADO.NET</li>
 
-			<li class="level-advanced years-many">Oracle</li>
-			<li class="level-advanced years-10">Microsoft SQL Server</li>
-			<li class="level-intermediate years-10">Stored Procedures</li>
+			<li class="level-advanced years-many">Oracle, PL/SQL, stored procedures (10g, 9i)</li>
+			<li class="level-advanced years-10">Microsoft SQL Server (2005, 2000)</li>
 			<li class="level-intermediate years-3">SQLite</li>
 
-			<li class="level-intermediate years-4">HTML + CSS</li>
 			<li class="level-intermediate years-4">XML</li>
-			<li class="level-beginner years-1">jQuery</li>
-			<li class="level-beginner years-2">JavaScript</li>
 
-			<li class="level-intermediate years-3">Drupal</li>
-			<li class="level-advanced years-10">Visual Studio</li>
-			<li class="level-beginner years-1">Entity Framework</li>
+			<li class="level-intermediate years-3">Drupal CMS</li>
+			<li class="level-begginner years-1">Linux (Debian)</li>
+			<li class="level-advanced years-10">Microsoft Visual Studio (2002 a 2010)</li>
+			<li class="level-beginner years-1">Entity Framework 4.0</li>
 			<li class="level-beginner years-1">UML</li>
-			<li class="level-advanced years-many">Windows</li>
-			<li class="level-intermediate years-10">Visual Basic</li>
-			<li class="level-intermediate years-10">Access</li>
-			<li class="level-intermediate years-5">ActiveX</li>
+			<li class="level-advanced years-many">Windows (7, Vista, XP, 2000, NT)</li>
+			<li class="level-intermediate years-6">Visual Basic (6, 5, 4)</li>
+			<li class="level-intermediate years-6">OLEDB, ADO, ODBC</li>
+
+			<li class="level-intermediate years-5">Microsoft SourceSafe</li>
+			<li class="level-intermediate years-5">Microsoft Access (2010, 2007, 2002, 97)</li>
+			<li class="level-intermediate years-5">ActiveX (DLL, OCX)</li>
 			<li class="level-beginner years-1">Java</li>
 		</ul>
 	</section>
+
+	<section id="languages">
+		<h2 class="english">Languages</h2>
+		<h2 class="portugues">Idiomas</h2>
+
+		<ul>
+			<li class="language-native">
+				<span class="english">Portuguese</span>
+			</li>
+			<li class="language-fluent">
+				<span class="english">English</span>
+				<span class="portugues">Inglês</span>
+			</li>
+			<li class="language-advanced">
+				<span class="english">Italian</span>
+				<span class="portugues">Italiano</span>
+			</li>
+			<li class="language-beginner">
+				<span class="english">Spanish</span>
+				<span class="portugues">Espanhol</span>
+			</li>
+			<li class="language-notions">
+				<span class="english">German</span>
+				<span class="portugues">Alemão</span>
+			</li>
+		</ul>
+	</section>
+
+	<section id="experience">
+		<h2 class="english">Experience</h2>
+		<h2 class="portugues">Experiência profissional</h2>
+
+		<div id="folha-com">
+			<h3 class="company">Folha.com (antes conhecida como "Folha Online")</h3>
+			<p class="when">ago/2010 — hoje</p>
+			<p class="role">Analista/Desenvolvedor Web (Backend)</p>
+			<ul class="activities">
+				<li>Colaboração no framework PHP desenvolvido internamente.</li>
+				<li>Desenvolvimento de aplicações web (administrativas e públicas).</li>
+				<li>Modelagem de dados e design orientado a objetos.</li>
+				<li>Ferramentas de QA: qualidade de código e padrões de codificação (PEAR Code Sniffer), design patterns, integração contínua (Jenkins).</li>
+			</ul>
+			<ul class="projects">
+				<li>Assinaturas: migração do sistema desktop (Oracle Forms) para ambiente LAMP.</li>
+				<li>
+					Paywall: controle de leitura de notícias para assinantes (o internauta pode ver até 40 notícias por mês; além disso, deve assinar a Folha).
+					<br>
+					Primeiro jornal do Brasil a usar este sistema de bloqueio.
+					<br>
+					Uso de MongoDB e MySQL para relatórios de visitantes (hits únicos).
+					<br>Manipulação diária de 5 milhões de registros/dia e até 90 milhões de registros/mês.</li>
+				<li>Eleições 2012</li>
+				<li>
+					Classificados da Folha: área administrativa e área pública (captura de anúncios, cobranças com cartão de crédito, integração com outros sistemas).
+					<br>Migração do sistema interno desktop (Windows, C++) para um ambiente LAMP.</li>
+			</ul>
+		</div>
+
+		<div id="folha-ti">
+			<h3 class="company">Folha de S.Paulo - Departamento de TI Classificados</h3>
+			<p class="when">jun/2001 — jul/2010</p>
+			<p class="role">Analista/programador desktop/web</p>
+			<ul class="activities">
+				<li>Conversão de aplicativos desktop C++ e Visual Basic 6 para C#.</li>
+				<li>Bibliotecas de classes C# e componentes OLE/ActiveX.</li>
+				<li>Manutenção de sistemas legados VB6.</li>
+			</ul>
+			<ul class="projects">
+				<li>Relatórios da área de Classificados em C++, gerando resultados em Excel, arquivos texto ou e-mail.</li>
+				<li>Windows Service C# para atualização de estoque da Livraria da Folha, usando arquivos XML para transportar dados.</li>
+				<li>Criação de uma biblioteca de classes C# (um esboço de framework interno).</li>
+				<li>CMS Drupal de documentação interna de sistemas (depois de pesquisar Joomla e Wordpress). Módulos de projetos, issue tracker, tarefas, notificações, criação de tipos de conteúdo personalizado.</li>
+				<li>Componente OLE C++ 1.52 para se comunicar com uma DLL 16-bits desenvolvida por terceiros, para uso em um programa VB6.</li>
+				<li>Wizards de instalação de aplicativos com o NSIS (NullSoft Scriptable Install System).</li>
+				<li>Manutenção de aplicativos Visual Basic 6, "satélites" do sistema principal C++ de captura de anúncios.</li>
+				<li>Migração de controle de versão do Microsoft SourceSafe para o Subversion.</li>
+			</ul>
+		</div>
+	</section>
 </body>
 </html>
+
+<!--
+Desenvolvedor desktop
+Folha de S.Paulo
+June 2001 – August 2010 (9 years 3 months)
+Desenvolvedor desktop / Coordenador de projeto
+Brand Brasil
+September 1997 – May 2001 (3 years 9 months)
+
+Desenvolvedor desktop / Consultor
+Banco Itaú
+July 1998 – October 1998 (4 months)
+
+Desenvolvedor desktop / Consultor
+Telefonica (know then as "Telesp")
+February 1996 – August 1997 (1 year 7 months)
+
+Desenvolvedor desktop / Consultor
+SESC Serviço Social do Comércio
+
+
+Brand Brasil Consultoria e Informática
+set/1997 — mai/2001
+Analista-Programador / Coordenador de projeto
+• Desenvolvedor e posterior coordenador do desenvolvimento do sistema Dietoterapia, sistema de nutrição
+desenvolvido para profissionais da área da saúde. Auxilia na preparação de cardápios individualizados para
+pacientes, avaliação do estado nutricional, planejamento e acompanhamento de exercícios físicos para atletas. Utilizado em hospitais de grande porte e por nutricionistas no Brasil e no exterior (Espanha,
+México, Portugal, EUA).
+Uso do software comercial InstallShield para geração de setups de instalação.
+Criação de relatórios no Crystal Reports 7.0 e 6.0, usando dados retornados por stored procedures,
+arquivos texto, Active Data, Access, e outros bancos de dados (ODBC).
+Acesso a relatórios do Crystal Reports usando o controle OCX, ou através das classes da biblioteca Crystal
+Automation Objects.
+Globalização e localização: uso de resource files para isolar as mensagens do sistema, facilitar a tradução
+para outras línguas, e criar um sistema multilingual.
+
+
+Banco Itaú
+Prestação de Serviços como Analista-Programador e Consultor
+• Participante da equipe de desenvolvimento do sistema de Boleto Eletrônico.
+• Modelagem lógica e física (ferramenta ERWin).
+• Codificação do módulo de "Cotação".
+• Relatórios no Crystal Reports, usando resultados de stored procedures.
+jul/1998 — out/1998
+TELESP - Telecomunicações de São Paulo
+fev/1996 — ago/1997
+Prestação de Serviços como Analista-Programador e Consultor
+• Desenvolvimento usando a ferramenta Centura / SQLWindows 5.03 da Gupta (totalmente orientada a
+objeto, já em 1996), acessando banco de dados Informix em ambiente Unix.
+• Sistemas de Administração de Compromissos, Contratos e Pedidos de Compra, usando tecnologia Cliente/
+Servidor e Orientação a Objetos.
+SESC - Serviço Social do Comércio
+mar/1993 — ago/1997
+Prestação de Serviços como Analista-Programador e Consultor
+• Controle de Acesso por catraca eletrônica, implantado no SESC Ribeirão Preto e SESC São Carlos
+(linguagens C, Clipper, Microsoft COBOL 4.5).
+• Sistema do restaurante do SESC Carmo: registro dos alimentos servidos e controle dos recebimentos
+efetuados em terminais PDV (Visual Basic 4.0 e Access).
+• Automação Comercial utilizando Terminais Pontos de Venda (PDV), executando recebimentos e funções
+financeiras/contábeis. Implantado pessoalmente em várias unidades do SESC em todo o estado de São
+Paulo (Microsoft COBOL 4.5, COBOL Microfocus/2 para UNIX).
+• Sistema Atendimento ao Público do SESC: matrícula de associados, cursos, atendimento odontológico,
+implantado em todas as unidades SESC (COBOL Microfocus/2 para UNIX).
+• Rotina para geração de códigos de barras padrão Interleaved 2 de 5, para uso em impressão de
+carteirinhas de comerciários do SESC (linguagem C para MS-DOS e UNIX).
+
+
+Cursos
+
+
+Microsoft Official Course - Web Developer 2009
+• 4994A: Introduction to Programming Microsoft .NET Applications with Visual Studio 2005 (40 horas)
+http://www.microsoft.com/learning/en/us/course.aspx?ID=4994a
+
+• 2956B: Core Foundations of Microsoft .NET 2.0 Development (20 horas)
+http://www.microsoft.com/learning/en/us/syllabi/2956bfinal.mspx
+
+• 2957B: Advanced Foundations of Microsoft .NET 2.0 Development (20 horas)
+http://www.microsoft.com/learning/en/us/course.aspx?ID=2957b
+
+• 2541B: Core Data Access with Microsoft Visual Studio 2005 (20 horas)
+http://www.microsoft.com/learning/syllabi/2541afinal.mspx
+
+• 2543B: Core Web Application Technologies with Microsoft Visual Studio 2005 (20 horas)
+http://www.microsoft.com/learning/en/us/syllabi/2543Afinal.mspx
+
+• 2542A: Advanced Data Access with Microsoft Visual Studio 2005 (16 horas)
+http://www.microsoft.com/learning/en/us/course.aspx?ID=2542A
+
+• 2544A: Advanced Web Application Technologies with Microsoft Visual Studio 2005 (16 horas)
+http://www.microsoft.com/learning/en/us/course.aspx?ID=2544a
+
+
+Oracle 9i: Java Programming @ Oracle University/En-Sof (30 horas) 2004
+
+Create Servlets and Java Server Pages @ Oracle University/En-Sof (12 horas) 2002
+
+Visual C++ 6.0 @ Agit Informática (80 horas) 2002
+http://www.agit.com.br/perfil_visual_c.htm
+
+Linguagem C++ @ Agit Informática (60 horas) 2002
+http://www.agit.com.br/perfil_linguagem_c.htm
+
+Programação ASP @ 7COMm (40 horas) 2001
+
+Programando em Java @ 7COMm (40 horas) 2001
+
+
+Educação
+ICIB Instituto Cultural Ítalo Brasileiro 2010-2012
+
+Colégio Miguel de Cervantes 2002
+Espanhol Básico
+
+Universidade de São Paulo (USP)
+Curso Superior de Graduação em Psicologia (incompleto), 1995 — 1996
+Escola Técnica Federal de São Paulo (ETFSP, atual IFSP)
+Colegial Técnico em Processamento de Dados, 1990 — 1993
+
+
+Escola Técnica Federal de São Paulo, ETFSP (currently IFSP)
+Computer Science Skilled Training
+1990 – 1993
+
+Universidade de São Paulo
+Psychology
+1995 – 1996
+
+ICIB Instituto Cultural Ítalo Brasileiro
+Italian
+2010 – 2012
+
+Cervantes
+Spanish
+2002 – 2002
+
+-->
