@@ -12,7 +12,7 @@ li span.portugues { display: inline; }
  */
 
 /* Languages */
-.language-native { display: none; }
+ul.cloud li.language-native { display: none; }
 .language-fluent:after { content: " fluente"; }
 .language-advanced:after { content: " avançado"; }
 .language-beginner:after { content: " básico"; }

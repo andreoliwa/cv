@@ -13,7 +13,35 @@ body { font-size: medium; }
 section { border-bottom: solid 1px; }
 p { margin: 0px; }
 
-h1 { margin: 2px; }
-h2 { margin: 0px; }
-h3 { margin-top: 5px; margin-bottom: 2px; }
+h1 { margin: 3px; }
+h2, h3 { margin-top: 5px; margin-bottom: 2px; }
 ul { margin: 2px; }
+
+/* http://webdesign.about.com/od/csstutorials/a/aa011407.htm */
+ul.cloud {
+	padding: 2px;
+	text-align: left;
+}
+ul.cloud a { padding: 0px; }
+ul.cloud { margin: 0; }
+ul.cloud li {
+	display: inline-block;
+	margin-top: 5px ;
+	margin-bottom: 5px ;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left: solid 2px blue;
+}
+
+/*
+http://stackoverflow.com/questions/5688791/separators-for-navigation
+ul.cloud li + li:before{
+    content: " | ";
+    padding-left: 10px;
+    padding: 0 10px;
+}
+ul.cloud li + li {
+    background:url('seperator.gif') no-repeat top left;
+    padding-left: 10px
+}
+*/
