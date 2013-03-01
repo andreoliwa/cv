@@ -1,11 +1,11 @@
 /* Hide some elements in the printed version */
 @media print {
-	.noprint {
+	.dont-print, .never-print {
     	display: none;
 	}
 }
 
-.noprint {
+.dont-print, .never-print {
 	background-color: #CECECE;
 }
 
