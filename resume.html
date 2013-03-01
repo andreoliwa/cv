@@ -8,7 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="resume.css" />
 	<link rel="stylesheet" type="text/css" href="resume-portugues.css" title="portugues" />
 	<link rel="alternate stylesheet" type="text/css" href="resume-english.css" title="english" />
-	<script type="text/javascript" src="resume.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="resume.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -17,6 +18,7 @@
 		&nbsp;|&nbsp;
 		<a accesskey="n" href="#"onclick="changeLanguage('english', 'Resume: Andreoli, Wagner A.');">English (ALT+N)</a>
 	</div>
+
 	<section id="profile">
 		<h1 class="english">Andreoli, Wagner A.</h1>
 		<h1 class="portugues">Wagner Augusto Andreoli</h1>
@@ -58,7 +60,7 @@
 	</section>
 
 	<section id="current-skills">
-		<h2 class="english">Current skills & expertise</h2>
+		<h2 class="english">Current skills and expertise</h2>
 		<h2 class="portugues">Habilidades em uso atualmente</h2>
 
 		<ul>
@@ -81,16 +83,24 @@
 				<span class="english">Data Modeling</span>
 				<span class="portugues">Modelagem de dados</span>
 			</li>
+			<li class="level-beginner years-1">
+				<span class="english">
+					Agile (Scrum with
+					<a href="https://www.pivotaltracker.com">Pivotal Tracker</a>
+					)
+				</span>
+				<span class="portugues">
+					Metodologias ágeis (Scrum com
+					<a href="https://www.pivotaltracker.com">Pivotal Tracker</a>
+					)
+				</span>
+			</li>
+
 			<li class="level-advanced years-3">MVC</li>
 			<li class="level-beginner years-2">jQuery, JavaScript, AJAX</li>
 			<li class="level-beginner years-4">HTML, CSS</li>
 
-			<li class="level-beginner years-1">
-				<span class="english">Agile (Scrum with Pivotal Tracker)</span>
-				<span class="portugues">Metodologias ágeis (Scrum com Pivotal Tracker)</span>
-			</li>
-
-			<li class="level-intermediate years-3">Oracle 11g</li>
+			<li class="level-intermediate years-3">Oracle 11g, PL/SQL, stored procedures</li>
 
 			<li class="level-beginner years-1">
 				<span class="english">TDD, unit tests</span>
@@ -98,32 +108,40 @@
 			</li>
 
 			<li class="level-beginner years-1">
-				<span class="english">CI with Jenkins</span>
-				<span class="portugues">Integração contínua com Jenkins</span>
+				<span class="english">
+					CI with
+					<a href="http://jenkins-ci.org/">Jenkins</a>
+				</span>
+				<span class="portugues">
+					Integração contínua com
+					<a href="http://jenkins-ci.org/">Jenkins</a>
+				</span>
 			</li>
+			<li class="level-beginner years-0">Python</li>
+			<li class="level-beginner years-0">Ruby on Rails</li>
 		</ul>
 	</section>
 
-	<section id="other-skills">
-		<h2 class="english">Previous and other skills</h2>
-		<h2 class="portugues">Habilidades anteriores e outras</h2>
+	<section id="previous-skills">
+		<h2 class="english">Previous skills</h2>
+		<h2 class="portugues">Habilidades anteriores</h2>
 
 		<ul>
-			<li class="level-beginner years-0">Python</li>
-			<li class="level-beginner years-0">Ruby on Rails</li>
 			<li class="level-intermediate years-4">C#</li>
 			<li class="level-intermediate years-8">C++</li>
 			<li class="level-intermediate years-4">.NET Framework</li>
 			<li class="level-beginner years-1">ASP.NET MVC 2</li>
 			<li class="level-intermediate years-4">ADO.NET</li>
 
-			<li class="level-advanced years-many">Oracle, PL/SQL, stored procedures (10g, 9i)</li>
+			<li class="level-advanced years-many">Oracle (10g, 9i)</li>
 			<li class="level-advanced years-10">Microsoft SQL Server (2005, 2000)</li>
 			<li class="level-intermediate years-3">SQLite</li>
 
 			<li class="level-intermediate years-4">XML</li>
 
-			<li class="level-intermediate years-3">Drupal CMS</li>
+			<li class="level-intermediate years-3">
+				<a href="http://drupal.org/">Drupal CMS</a>
+			</li>
 			<li class="level-begginner years-1">Linux (Debian)</li>
 			<li class="level-advanced years-10">Microsoft Visual Studio (2002 a 2010)</li>
 			<li class="level-beginner years-1">Entity Framework 4.0</li>
@@ -173,7 +191,7 @@
 		<div id="folha-com">
 			<h3 class="company">Folha.com (antes conhecida como "Folha Online")</h3>
 			<p class="when">ago/2010 — hoje</p>
-			<p class="role">Analista/Desenvolvedor Web (Backend)</p>
+			<p class="what">Desenvolvedor Backend</p>
 			<ul class="activities">
 				<li>Colaboração no framework PHP desenvolvido internamente.</li>
 				<li>Desenvolvimento de aplicações web (administrativas e públicas).</li>
@@ -199,7 +217,7 @@
 		<div id="folha-ti">
 			<h3 class="company">Folha de S.Paulo - Departamento de TI Classificados</h3>
 			<p class="when">jun/2001 — jul/2010</p>
-			<p class="role">Analista/programador desktop/web</p>
+			<p class="what">Desenvolvedor desktop/web</p>
 			<ul class="activities">
 				<li>Conversão de aplicativos desktop C++ e Visual Basic 6 para C#.</li>
 				<li>Bibliotecas de classes C# e componentes OLE/ActiveX.</li>
@@ -216,63 +234,182 @@
 				<li>Migração de controle de versão do Microsoft SourceSafe para o Subversion.</li>
 			</ul>
 		</div>
+
+		<div id="brand-brasil">
+			<h3 class="company">Brand Brasil Consultoria e Informática</h3>
+			<p class="when">set/1997 — mai/2001</p>
+			<p class="what">Desenvolvedor desktop / Coordenador de projeto</p>
+			<ul class="activities">
+				<li>Desenvolvedor e posterior coordenador de desenvolvimento do sistema Dietoterapia</li>
+			</ul>
+			<ul class="projects">
+				<li>
+					Dietoterapia: sistema de nutrição desenvolvido para profissionais da área da saúde.
+					<br>
+					Auxilia na preparação de cardápios individualizados para pacientes, avaliação do estado nutricional, planejamento e acompanhamento de exercícios físicos para atletas.
+					<br>Utilizado em hospitais de grande porte e por nutricionistas no Brasil e no exterior (Espanha, México, Portugal, EUA).</li>
+				<li>Uso do software comercial InstallShield para geração de setups de instalação.</li>
+				<li>Criação de relatórios no Crystal Reports 7.0 e 6.0, usando dados retornados por stored procedures, arquivos texto, Active Data, Access, e outros bancos de dados (ODBC).</li>
+				<li>Acesso a relatórios do Crystal Reports usando o controle OCX, ou através das classes da biblioteca Crystal Automation Objects.</li>
+				<li>Globalização e localização: uso de resource files para isolar as mensagens do sistema, facilitar a tradução para outras línguas, e criar um sistema multilingual.</li>
+			</ul>
+		</div>
+
+		<div id="itau">
+			<h3 class="company">Banco Itaú</h3>
+			<p class="when">jul/1998 – out/1998</p>
+			<p class="what">Desenvolvedor desktop / Consultor</p>
+		</div>
+
+		<div id="telesp">
+			<h3 class="company">
+				<span class="english">Telefonica (know then as TELESP)</span>
+				<span class="portugues">Telefonica (antes conhecida como TELESP)</span>
+			</h3>
+			<p class="when">fev/1996 – ago/1997</p>
+			<p class="what">Desenvolvedor desktop / Consultor</p>
+		</div>
+
+		<div id="sesc">
+			<h3 class="company">SESC (Serviço Social do Comércio)</h3>
+			<p class="when">mar/1993 – ago/1997</p>
+			<p class="what">Desenvolvedor desktop / Consultor</p>
+		</div>
+	</section>
+
+	<section id="courses">
+		<h2 class="english">Courses</h2>
+		<h2 class="portugues">Cursos</h2>
+
+		<div id="berkeley">
+			<h3 class="company">University of California, Berkeley</h3>
+			<p class="when">2012</p>
+			<p class="how-long">3 meses</p>
+			<p class="what">
+				<a href="https://class.coursera.org/saas/lecture/preview">Software Engineering for Software as a Service (SaaS)</a>
+			</p>
+		</div>
+
+		<div id="microsoft">
+			<h3 class="company">Microsoft Official Course - Web Developer</h3>
+			<p class="when">2009</p>
+			<p class="how-long">152 horas</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/en/us/course.aspx?ID=4994a">4994A: Introduction to Programming Microsoft .NET Applications with Visual Studio 2005</a>
+			</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/en/us/syllabi/2956bfinal.mspx">2956B: Core Foundations of Microsoft .NET 2.0 Development</a>
+			</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/en/us/course.aspx?ID=2957b">2957B: Advanced Foundations of Microsoft .NET 2.0 Development</a>
+			</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/syllabi/2541afinal.mspx">2541B: Core Data Access with Microsoft Visual Studio 2005</a>
+			</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/en/us/syllabi/2543Afinal.mspx">2543B: Core Web Application Technologies with Microsoft Visual Studio 2005</a>
+			</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/en/us/course.aspx?ID=2542A">2542A: Advanced Data Access with Microsoft Visual Studio 2005</a>
+			</p>
+			<p class="what">
+				<a href="http://www.microsoft.com/learning/en/us/course.aspx?ID=2544a">2544A: Advanced Web Application Technologies with Microsoft Visual Studio 2005</a>
+			</p>
+		</div>
+
+		<div id="ensof-java" class="noprint">
+			<h3 class="company">Oracle University/En-Sof</h3>
+			<p class="when">2004</p>
+			<p class="how-long">30 horas</p>
+			<p class="what">Oracle 9i: Java Programming</p>
+		</div>
+
+		<div id="agit-vc">
+			<h3 class="company">Agit Informática</h3>
+			<p class="when">2002</p>
+			<p class="how-long">80 horas</p>
+			<p class="what">
+				<a href="http://www.agit.com.br/perfil_visual_c.htm">Visual C++ 6.0</a>
+			</p>
+		</div>
+
+		<div id="agit-cpp">
+			<h3 class="company">Agit Informática</h3>
+			<p class="when">2002</p>
+			<p class="how-long">60 horas</p>
+
+			<p class="what">
+				<a href="http://www.agit.com.br/perfil_linguagem_c.htm">Linguagem C++</a>
+			</p>
+		</div>
+	</section>
+	<!--
+
+Create Servlets and Java Server Pages @ Oracle University/En-Sof (12 horas) 2002
+
+Programação ASP @ 7COMm (40 horas) 2001
+
+Programando em Java @ 7COMm (40 horas) 2001 -->
+
+	<section id="education">
+		<h2 class="english">Education</h2>
+		<h2 class="portugues">Educação</h2>
+
+		<div id="icib">
+			<h3 class="company">ICIB Instituto Cultural Ítalo Brasileiro</h3>
+			<p class="when">2010 — 2012</p>
+			<p class="what">Italiano (8 módulos, básico a avançado)</p>
+		</div>
+
+		<div id="cervantes">
+			<h3 class="company">Colégio Miguel de Cervantes</h3>
+			<p class="when">2002</p>
+			<p class="what">Espanhol (2 módulos, básico)</p>
+		</div>
+
+		<div id="usp">
+			<h3 class="company">Universidade de São Paulo (USP)</h3>
+			<p class="when">1995 — 1996</p>
+			<p class="what">
+				<span class="english">Psychology</span>
+				<span class="portugues">Curso Superior de Graduação em Psicologia (incompleto)</span>
+			</p>
+		</div>
+
+		<div id="etfsp">
+			<h3 class="company">
+				<span class="english">Escola Técnica Federal de São Paulo (ETFSP, currently known as IFSP)</span>
+				<span class="portugues">Escola Técnica Federal de São Paulo (ETFSP, atual IFSP)</span>
+			</h3>
+			<p class="when">1990 — 1993</p>
+			<p class="what">
+				<span class="english">Computer Science Skilled Training</span>
+				<span class="portugues">Colegial Técnico em Processamento de Dados</span>
+			</p>
+		</div>
 	</section>
 </body>
 </html>
-
 <!--
-Desenvolvedor desktop
-Folha de S.Paulo
-June 2001 – August 2010 (9 years 3 months)
-Desenvolvedor desktop / Coordenador de projeto
-Brand Brasil
-September 1997 – May 2001 (3 years 9 months)
-
-Desenvolvedor desktop / Consultor
 Banco Itaú
-July 1998 – October 1998 (4 months)
-
-Desenvolvedor desktop / Consultor
-Telefonica (know then as "Telesp")
-February 1996 – August 1997 (1 year 7 months)
-
-Desenvolvedor desktop / Consultor
-SESC Serviço Social do Comércio
-
-
-Brand Brasil Consultoria e Informática
-set/1997 — mai/2001
-Analista-Programador / Coordenador de projeto
-• Desenvolvedor e posterior coordenador do desenvolvimento do sistema Dietoterapia, sistema de nutrição
-desenvolvido para profissionais da área da saúde. Auxilia na preparação de cardápios individualizados para
-pacientes, avaliação do estado nutricional, planejamento e acompanhamento de exercícios físicos para atletas. Utilizado em hospitais de grande porte e por nutricionistas no Brasil e no exterior (Espanha,
-México, Portugal, EUA).
-Uso do software comercial InstallShield para geração de setups de instalação.
-Criação de relatórios no Crystal Reports 7.0 e 6.0, usando dados retornados por stored procedures,
-arquivos texto, Active Data, Access, e outros bancos de dados (ODBC).
-Acesso a relatórios do Crystal Reports usando o controle OCX, ou através das classes da biblioteca Crystal
-Automation Objects.
-Globalização e localização: uso de resource files para isolar as mensagens do sistema, facilitar a tradução
-para outras línguas, e criar um sistema multilingual.
-
-
-Banco Itaú
-Prestação de Serviços como Analista-Programador e Consultor
+Prestação de Serviços como desenvolvedor e Consultor
 • Participante da equipe de desenvolvimento do sistema de Boleto Eletrônico.
 • Modelagem lógica e física (ferramenta ERWin).
 • Codificação do módulo de "Cotação".
 • Relatórios no Crystal Reports, usando resultados de stored procedures.
 jul/1998 — out/1998
+
 TELESP - Telecomunicações de São Paulo
 fev/1996 — ago/1997
-Prestação de Serviços como Analista-Programador e Consultor
+Prestação de Serviços como desenvolvedor e Consultor
 • Desenvolvimento usando a ferramenta Centura / SQLWindows 5.03 da Gupta (totalmente orientada a
 objeto, já em 1996), acessando banco de dados Informix em ambiente Unix.
 • Sistemas de Administração de Compromissos, Contratos e Pedidos de Compra, usando tecnologia Cliente/
 Servidor e Orientação a Objetos.
+
 SESC - Serviço Social do Comércio
 mar/1993 — ago/1997
-Prestação de Serviços como Analista-Programador e Consultor
+Prestação de Serviços como desenvolvedor e Consultor
 • Controle de Acesso por catraca eletrônica, implantado no SESC Ribeirão Preto e SESC São Carlos
 (linguagens C, Clipper, Microsoft COBOL 4.5).
 • Sistema do restaurante do SESC Carmo: registro dos alimentos servidos e controle dos recebimentos
@@ -284,75 +421,5 @@ Paulo (Microsoft COBOL 4.5, COBOL Microfocus/2 para UNIX).
 implantado em todas as unidades SESC (COBOL Microfocus/2 para UNIX).
 • Rotina para geração de códigos de barras padrão Interleaved 2 de 5, para uso em impressão de
 carteirinhas de comerciários do SESC (linguagem C para MS-DOS e UNIX).
-
-
-Cursos
-
-
-Microsoft Official Course - Web Developer 2009
-• 4994A: Introduction to Programming Microsoft .NET Applications with Visual Studio 2005 (40 horas)
-http://www.microsoft.com/learning/en/us/course.aspx?ID=4994a
-
-• 2956B: Core Foundations of Microsoft .NET 2.0 Development (20 horas)
-http://www.microsoft.com/learning/en/us/syllabi/2956bfinal.mspx
-
-• 2957B: Advanced Foundations of Microsoft .NET 2.0 Development (20 horas)
-http://www.microsoft.com/learning/en/us/course.aspx?ID=2957b
-
-• 2541B: Core Data Access with Microsoft Visual Studio 2005 (20 horas)
-http://www.microsoft.com/learning/syllabi/2541afinal.mspx
-
-• 2543B: Core Web Application Technologies with Microsoft Visual Studio 2005 (20 horas)
-http://www.microsoft.com/learning/en/us/syllabi/2543Afinal.mspx
-
-• 2542A: Advanced Data Access with Microsoft Visual Studio 2005 (16 horas)
-http://www.microsoft.com/learning/en/us/course.aspx?ID=2542A
-
-• 2544A: Advanced Web Application Technologies with Microsoft Visual Studio 2005 (16 horas)
-http://www.microsoft.com/learning/en/us/course.aspx?ID=2544a
-
-
-Oracle 9i: Java Programming @ Oracle University/En-Sof (30 horas) 2004
-
-Create Servlets and Java Server Pages @ Oracle University/En-Sof (12 horas) 2002
-
-Visual C++ 6.0 @ Agit Informática (80 horas) 2002
-http://www.agit.com.br/perfil_visual_c.htm
-
-Linguagem C++ @ Agit Informática (60 horas) 2002
-http://www.agit.com.br/perfil_linguagem_c.htm
-
-Programação ASP @ 7COMm (40 horas) 2001
-
-Programando em Java @ 7COMm (40 horas) 2001
-
-
-Educação
-ICIB Instituto Cultural Ítalo Brasileiro 2010-2012
-
-Colégio Miguel de Cervantes 2002
-Espanhol Básico
-
-Universidade de São Paulo (USP)
-Curso Superior de Graduação em Psicologia (incompleto), 1995 — 1996
-Escola Técnica Federal de São Paulo (ETFSP, atual IFSP)
-Colegial Técnico em Processamento de Dados, 1990 — 1993
-
-
-Escola Técnica Federal de São Paulo, ETFSP (currently IFSP)
-Computer Science Skilled Training
-1990 – 1993
-
-Universidade de São Paulo
-Psychology
-1995 – 1996
-
-ICIB Instituto Cultural Ítalo Brasileiro
-Italian
-2010 – 2012
-
-Cervantes
-Spanish
-2002 – 2002
 
 -->
