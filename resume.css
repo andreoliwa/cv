@@ -17,6 +17,15 @@ h1 { margin: 3px; }
 h2, h3 { margin-top: 5px; margin-bottom: 2px; }
 ul { margin: 2px; }
 
+.info {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.email, .phone {
+	display: inline;
+}
+
 /* http://webdesign.about.com/od/csstutorials/a/aa011407.htm */
 ul.cloud {
 	padding: 2px;
@@ -31,6 +40,20 @@ ul.cloud li {
 	margin-left: 5px;
 	padding-left: 5px;
 	border-left: solid 2px blue;
+}
+
+ul.logos {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+ul.logos li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+ul.logos li a img {
+	width: 100px;
 }
 
 /*

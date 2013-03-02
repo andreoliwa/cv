@@ -2,8 +2,7 @@
 .english { display: none; }
 
 /* Portuguese language */
-.portugues { display: block; }
-li span.portugues { display: inline; }
+.portugues { display: inherit; }
 
 /* Skill levels
 .level-advanced:after { content: " (Avançado)"; }
