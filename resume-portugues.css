@@ -7,21 +7,15 @@
 /* Skill levels
 .level-advanced:after { content: " (Avançado)"; }
 .level-intermediate:after { content: " (Intermediário)"; }
-.level-beginner:after { content: " (Iniciante)"; }
- */
+.level-beginner:after { content: " (Iniciante)"; } */
 
 /* Languages */
-ul.cloud li.language-native { display: none; }
+.language-native { display: none; }
 .language-fluent:after { content: " fluente"; }
 .language-advanced:after { content: " avançado"; }
 .language-beginner:after { content: " básico"; }
 .language-notions:after { content: " (noções)"; }
 
 /* Experience */
-ul.activities { font-style: italic; }
-ul.activities li { font-style: normal; }
 .activities:before { content: "Atividades:"; }
-
-ul.projects { font-style: italic; }
-ul.projects li { font-style: normal; }
 .projects:before { content: "Projetos:"; }

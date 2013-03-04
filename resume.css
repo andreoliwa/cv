@@ -29,7 +29,7 @@ ul { margin: 2px; }
 /* http://webdesign.about.com/od/csstutorials/a/aa011407.htm */
 ul.cloud {
 	padding: 2px;
-	text-align: left;
+	text-align: center;
 }
 ul.cloud a { padding: 0px; }
 ul.cloud { margin: 0; }
@@ -41,6 +41,18 @@ ul.cloud li {
 	padding-left: 5px;
 	border-left: solid 2px blue;
 }
+ul.cloud li.years-0 { font-size: 0.9em; }
+ul.cloud li.years-1 { font-size: 0.9em; }
+ul.cloud li.years-2 { font-size: 1.0em; }
+ul.cloud li.years-3 { font-size: 1.0em; }
+ul.cloud li.years-4 { font-size: 1.1em; }
+ul.cloud li.years-5 { font-size: 1.1em; }
+ul.cloud li.years-6 { font-size: 1.2em; }
+ul.cloud li.years-7 { font-size: 1.2em; }
+ul.cloud li.years-8 { font-size: 1.3em; }
+ul.cloud li.years-9 { font-size: 1.3em; }
+ul.cloud li.years-10 { font-size: 1.4em; }
+ul.cloud li.years-many { font-size: 1.4em; }
 
 ul.logos {
 	margin: 0px;
@@ -68,3 +80,9 @@ ul.cloud li + li {
     padding-left: 10px
 }
 */
+
+/* Experience */
+ul.activities { font-style: italic; }
+ul.activities li { font-style: normal; }
+ul.projects { font-style: italic; }
+ul.projects li { font-style: normal; }

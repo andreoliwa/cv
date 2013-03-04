@@ -1,15 +1,13 @@
 /* English language */
-.english { display: block; }
-li.english { display: block; }
-li span.english { display: inline; }
+.english { display: inherit; }
 
 /* Portuguese language */
 .portugues { display: none }
 
 /* Skill levels */
-.level-advanced:after { content: " (Advanced)"; }
+/*.level-advanced:after { content: " (Advanced)"; }
 .level-intermediate:after { content: " (Intermediate)"; }
-.level-beginner:after { content: " (Beginner)"; }
+.level-beginner:after { content: " (Beginner)"; }*/
 
 /* Languages */
 .language-native:after { content: " (native)"; }
@@ -17,3 +15,7 @@ li span.english { display: inline; }
 .language-advanced:after { content: " (advanced)"; }
 .language-beginner:after { content: " (begginer)"; }
 .language-notions:after { content: " (notions)"; }
+
+/* Experience */
+.activities:before { content: "Activities:"; }
+.projects:before { content: "Projects:"; }
