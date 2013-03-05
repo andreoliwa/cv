@@ -6,16 +6,46 @@
 }
 
 .dont-print, .never-print {
-	background-color: #CECECE;
+	background-color: #cecece;
 }
 
 body { font-size: medium; }
-section { border-bottom: solid 1px; }
-p { margin: 0px; }
 
-h1 { margin: 3px; }
-h2, h3 { margin-top: 5px; margin-bottom: 2px; }
-ul { margin: 2px; }
+h1 {
+	color: #9a521b;
+	font-size: 22pt;
+	font-style: italic;
+	margin: 0.5em 0 0.2em 0;
+	padding-top: 0px;
+}
+h2 {
+	font-family: verdana;
+	color: #cc7a17;
+	border-bottom: 1px solid #cc7a17;
+	font-weight: bold;
+	font-size: large;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-family: verdana;
+	font-weight: bold;
+	font-size: medium;
+	margin-top: 10px;
+	margin-bottom: 2px;
+	border-bottom: dotted 1px;
+}
+
+p, li {
+	font-family: verdana;
+	color: #666666;
+	font-size: small;
+	margin: 0px;
+	margin-bottom: 2px ;
+}
+ul {
+	margin: 2px;
+}
 
 .info {
 	text-align: center;
@@ -34,25 +64,34 @@ ul.cloud {
 ul.cloud a { padding: 0px; }
 ul.cloud { margin: 0; }
 ul.cloud li {
+	font-family: sans-serif;
 	display: inline-block;
 	margin-top: 5px ;
 	margin-bottom: 5px ;
 	margin-left: 5px;
 	padding-left: 5px;
-	border-left: solid 2px blue;
 }
-ul.cloud li.years-0 { font-size: 0.9em; }
-ul.cloud li.years-1 { font-size: 0.9em; }
-ul.cloud li.years-2 { font-size: 1.0em; }
-ul.cloud li.years-3 { font-size: 1.0em; }
-ul.cloud li.years-4 { font-size: 1.1em; }
-ul.cloud li.years-5 { font-size: 1.1em; }
-ul.cloud li.years-6 { font-size: 1.2em; }
-ul.cloud li.years-7 { font-size: 1.2em; }
-ul.cloud li.years-8 { font-size: 1.3em; }
-ul.cloud li.years-9 { font-size: 1.3em; }
-ul.cloud li.years-10 { font-size: 1.4em; }
-ul.cloud li.years-many { font-size: 1.4em; }
+ul.cloud li.years-0 { font-size: 0.8em; }
+ul.cloud li.years-1 { font-size: 0.8em; }
+ul.cloud li.years-2 { font-size: 0.9em; }
+ul.cloud li.years-3 { font-size: 0.9em; }
+ul.cloud li.years-4 { font-size: 1.0em; }
+ul.cloud li.years-5 { font-size: 1.0em; }
+ul.cloud li.years-6 { font-size: 1.1em; }
+ul.cloud li.years-7 { font-size: 1.1em; }
+ul.cloud li.years-8 { font-size: 1.2em; }
+ul.cloud li.years-9 { font-size: 1.2em; }
+ul.cloud li.years-10 { font-size: 1.3em; }
+ul.cloud li.years-many { font-size: 1.3em; }
+ul.cloud li:before {
+	content: '\ffed';
+	/*content: '\2022';*/
+	margin-right: 0.2em;
+}
+
+#languages li {
+	font-size: inherit;
+}
 
 ul.logos {
 	margin: 0px;
@@ -86,3 +125,17 @@ ul.activities { font-style: italic; }
 ul.activities li { font-style: normal; }
 ul.projects { font-style: italic; }
 ul.projects li { font-style: normal; }
+.when, .how-long, .what {
+	font-weight: bold;
+	font-style: italic;
+}
+.when, .how-long {
+	float: right;
+	margin-right: 10px;
+	position: relative;
+	top: -1.5em;
+}
+
+.new-page {
+	page-break-before: always;
+}

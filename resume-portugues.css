@@ -10,7 +10,7 @@
 .level-beginner:after { content: " (Iniciante)"; } */
 
 /* Languages */
-.language-native { display: none; }
+.language-native, ul.cloud li.language-native { display: none; }
 .language-fluent:after { content: " fluente"; }
 .language-advanced:after { content: " avançado"; }
 .language-beginner:after { content: " básico"; }
