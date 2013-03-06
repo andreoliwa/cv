@@ -90,7 +90,8 @@ ul.cloud li:before {
 }
 
 #languages li {
-	font-size: inherit;
+	font-size: 11pt;
+	margin: 5px 0 5px 0;
 }
 #languages li:before {
 	content: " ";
