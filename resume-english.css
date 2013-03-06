@@ -10,11 +10,11 @@
 .level-beginner:after { content: " (Beginner)"; }*/
 
 /* Languages */
-.language-native:after { content: " (native)"; }
-.language-fluent:after { content: " (fluent)"; }
-.language-advanced:after { content: " (advanced)"; }
-.language-beginner:after { content: " (begginer)"; }
-.language-notions:after { content: " (notions)"; }
+.language-native div:after { content: " (native)"; }
+.language-fluent div:after { content: " (fluent)"; }
+.language-advanced div:after { content: " (advanced)"; }
+.language-beginner div:after { content: " (begginer)"; }
+.language-notions div:after { content: " (notions)"; }
 
 /* Experience */
 .activities:before { content: "Activities:"; }

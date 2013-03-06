@@ -11,10 +11,10 @@
 
 /* Languages */
 .language-native, ul.cloud li.language-native { display: none; }
-.language-fluent:after { content: " fluente"; }
-.language-advanced:after { content: " avançado"; }
-.language-beginner:after { content: " básico"; }
-.language-notions:after { content: " (noções)"; }
+.language-fluent div:after { content: " fluente"; }
+.language-advanced div:after { content: " avançado"; }
+.language-beginner div:after { content: " básico"; }
+.language-notions div:after { content: " (noções)"; }
 
 /* Experience */
 .activities:before { content: "Atividades:"; }

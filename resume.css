@@ -92,6 +92,16 @@ ul.cloud li:before {
 #languages li {
 	font-size: inherit;
 }
+#languages li:before {
+	content: " ";
+}
+#languages div {
+	display: inline-block;
+}
+#languages img {
+	vertical-align: middle;
+	height: 20px;
+}
 
 ul.logos {
 	margin: 0px;
