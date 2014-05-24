@@ -111,11 +111,14 @@ ul.logos {
 }
 ul.logos li {
 	display: inline;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 ul.logos li a img {
 	width: 100px;
+}
+ul.logos li a img.zce {
+	width: 70px;
 }
 
 /*
