@@ -13,7 +13,8 @@
 .language-native div:after { content: " (native)"; }
 .language-fluent div:after { content: " (fluent)"; }
 .language-advanced div:after { content: " (advanced)"; }
-.language-beginner div:after { content: " (begginer)"; }
+.language-intermediate div:after { content: " (intermediate)"; }
+.language-beginner div:after { content: " (beginner)"; }
 .language-notions div:after { content: " (notions)"; }
 
 /* Experience */

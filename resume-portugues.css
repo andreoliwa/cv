@@ -13,6 +13,7 @@
 .language-native, ul.cloud li.language-native { display: none; }
 .language-fluent div:after { content: " fluente"; }
 .language-advanced div:after { content: " avançado"; }
+.language-intermediate div:after { content: " intermediário"; }
 .language-beginner div:after { content: " básico"; }
 .language-notions div:after { content: " (noções)"; }
 
