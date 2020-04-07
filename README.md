@@ -1,5 +1,6 @@
-multilingual-resume
--
+**This CV is deprecated; [see my online CV instead](https://github.com/andreoliwa/online-cv).**
+
+## multilingual-resume
 
 An HTML/CSS resume in multiple languages (English and Portuguese for now).
 
